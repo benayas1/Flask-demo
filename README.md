@@ -2,7 +2,7 @@
 
 Example of how to deploy a trained pytorch model.
 
-### Requeriements
+### Requirements
 Install the following packages
 ```
 pip install torch
