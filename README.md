@@ -17,5 +17,7 @@ python server.py
 ```
 
 Open a browser and go to the following url, where <my_url> is the IP address of the server
+```
 http://<my_url>:5000/predict?url=https://people.cs.pitt.edu/~mzhang/image_ads/0/53850.jpg
+```
 
