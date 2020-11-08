@@ -9,6 +9,7 @@ import numpy as np
 import requests, os
 from io import BytesIO
 from src.models import *
+from src.utils import read_img
 
 # import settings
 from settings import * # import 
@@ -44,7 +45,7 @@ def predict():
     url = request.args['url']
     app.logger.info("Classifying image %s" % (url),)
     response = requests.get(url)
-    img = read(BytesIO(response.content))
+    img = read_img(BytesIO(response.content))
 
     t = time.time() # get execution time
     with torch.no_grad():
