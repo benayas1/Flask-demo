@@ -8,6 +8,7 @@ import time
 import numpy as np
 import requests, os
 from io import BytesIO
+from src.models import *
 
 # import settings
 from settings import * # import 
